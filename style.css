@@ -1,0 +1,61 @@
+
+    .img-preview {
+      max-width: 450px;
+      max-width: 100%;
+      margin-top: 20px;
+      height: auto;
+    }
+
+
+    .custom-button {
+      cursor: pointer;
+      font-size: 24px;
+      color: #007bff;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Add glowing and brightening animation to the loading image */
+    @keyframes glow {
+      0% {
+        filter: brightness(50%);
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+      }
+      50% {
+        filter: brightness(150%);
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+      }
+      100% {
+        filter: brightness(50%);
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+      }
+    }
+
+    .loading img {
+      animation: glow 1s infinite;
+    }
+
+    .text-box {
+      height: 350px;
+      width: 400px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .container {
+        flex: 1;
+      }
+
+      footer {
+        flex-shrink: 0;
+      }
+  
