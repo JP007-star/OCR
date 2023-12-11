@@ -1,6 +1,6 @@
 
     .img-preview {
-      max-width: 450px;
+      max-width: 250px;
       max-width: 100%;
       margin-top: 20px;
       height: auto;
@@ -37,12 +37,25 @@
       }
     }
 
+    .custom-file-upload {
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .custom-file-upload input {
+      display: none;
+    }
+    
+
     .loading img {
       animation: glow 1s infinite;
     }
 
     .text-box {
-      height: 350px;
+      height: 450px;
       width: 400px;
     }
     body {
